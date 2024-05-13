@@ -15,7 +15,7 @@ LogBox.ignoreLogs([
 export default function AppNavigation() {
     return (
         <NavigationContainer>
-            <Stack.Navigator initialRouteName="Home">
+            <Stack.Navigator initialRouteName="Splash">
                 <Stack.Screen name="Splash" options={{ headerShown: false }} component={SplashScreen} />
                 <Stack.Screen name="Home" options={{ headerShown: false }} component={HomeScreen} />
             </Stack.Navigator>

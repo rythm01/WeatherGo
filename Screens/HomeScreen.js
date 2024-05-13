@@ -49,7 +49,7 @@ export default function HomeScreen() {
     const handleTextDebounce = useCallback(debounce(handleSearch, 1200), [])
 
     const handleLocation = (loc) => {
-        console.log('location: ', loc)
+        // console.log('location: ', loc)
         setLocations([]);
         setShowSearch(false)
         setShowLoading(true)
@@ -57,19 +57,19 @@ export default function HomeScreen() {
             cityName: loc.name,
             days: '7'
         }).then(data => {
+            // console.log(data)
             setWeather(data);
             setShowLoading(false)
             storeData('city', loc.name)
         })
     }
 
-    const { current, location } = weather;
-    // console.log(weather?.forecast?.forecastday[0]?.astro)
+    const { current, location, forecast } = weather;
 
     return (
         <View className='flex-1 relative'>
             <StatusBar style='light' />
-            <Image blurRadius={70} source={require('../assets/images/bg.png')} className='absolute h-full w-full' />
+            <Image source={require('../assets/images/bg.png')} className='absolute h-full w-full' />
             {
                 showLoading ? (
                     <View className='flex-1 flex-row justify-center items-center'>
@@ -127,10 +127,10 @@ export default function HomeScreen() {
                                 </Text>
                             </Text>
 
-                            <View className='flex-row justify-center'>
+                            {/* <View className='flex-row justify-center'>
                                 <Image source={weatherImages[current?.condition?.text]} className='w-52 h-52'
                                 />
-                            </View>
+                            </View> */}
                             <View >
                                 <Text className='text-center font-bold text-white text-6xl ml-5'>
                                     {current?.temp_c}&#176;
@@ -172,9 +172,9 @@ export default function HomeScreen() {
                                 showsHorizontalScrollIndicator={false}
                             >
                                 {
-                                    weather?.forecast?.forecastday.map((item, index) => {
+                                    forecast?.forecastday.map((item, index) => {
                                         let date = new Date(item.date);
-                                        let options = { weekday: long };
+                                        let options = { weekday: 'long' };
                                         let dayName = date.toLocaleDateString('en-US', options);
                                         dayName = dayName.split(',')[0]
                                         return (
