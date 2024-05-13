@@ -29,7 +29,7 @@ WeatherGo is a mobile application developed with React Native. It provides users
 
 - Frontend Development:
   - [React Native](https://reactnative.dev/)
-  - [TailwindCSS (Nativewind)](https://github.com/jaredh159/React-Native-Tailwind-Nativewind)
+  - [TailwindCSS (Nativewind)]([https://github.com/jaredh159/React-Native-Tailwind-Nativewind](https://www.nativewind.dev/))
   
 - Weather API:
   - [OpenWeatherMap API](https://openweathermap.org/api)
