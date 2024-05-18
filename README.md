@@ -19,8 +19,8 @@ WeatherGo is a mobile application developed with React Native. It provides users
     <td><img src="https://github.com/rythm01/WeatherGo/assets/115993280/13be8256-8bdd-43ed-b31b-b14e26762be3" alt="Screenshot 2" width="200"></td>
   </tr>
   <tr>
-    <td><img src="https://github.com/rythm01/WeatherGo/assets/115993280/d0b706e3-dbae-43a8-b826-155558ab7b50" alt="Screenshot 3" width="200"></td>
-    <td><img src="https://github.com/rythm01/WeatherGo/assets/115993280/ed4dcdbf-0bd2-4058-8539-64ed40fdf8f5" alt="Screenshot 4" width="200"></td>
+    <td><img src="https://github.com/rythm01/WeatherGo/assets/115993280/ed4dcdbf-0bd2-4058-8539-64ed40fdf8f5" alt="Screenshot 3" width="200"></td>
+    <td><img src="https://github.com/rythm01/WeatherGo/assets/115993280/af6896cd-b93d-4a53-9452-58ab2e115959" alt="Screenshot 4" width="200"></td>
   </tr>
 </table>
 
