@@ -177,13 +177,15 @@ export default function HomeScreen() {
                                         let options = { weekday: 'long' };
                                         let dayName = date.toLocaleDateString('en-US', options);
                                         dayName = dayName.split(',')[0]
+                                        let conditionText = item?.day?.condition?.text;
+                                        conditionText = conditionText.trim();
                                         return (
                                             <View
                                                 key={index}
                                                 className="flex justify-center items-center w-24 rounded-3xl py-3 space-y-1 mr-4"
                                                 style={{ backgroundColor: theme.bgWhite(0.15) }}
                                             >
-                                                <Image source={weatherImages[item?.day?.condition?.text]}
+                                                <Image source={weatherImages[conditionText]}
                                                     className='h-11 w-11'
                                                 />
                                                 <Text className='text-white'>{dayName}</Text>
